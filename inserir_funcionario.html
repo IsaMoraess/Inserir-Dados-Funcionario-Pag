@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Funcionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inserir Dados do Funcionário</h1>
+    <form action="salvar_funcionario.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required>
+
+        <label for="salario_bruto">Salário Bruto:</label>
+        <input type="number" id="salario_bruto" name="salario_bruto" step="0.01" required>
+
+        <label for="inss">Desconto INSS:</label>
+        <input type="number" id="inss" name="inss" step="0.01" required>
+
+        <input type="submit" value="Salvar">
+    </form>
+    <a href="index.html">Voltar</a>
+</body>
+</html>
